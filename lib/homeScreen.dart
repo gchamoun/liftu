@@ -9,13 +9,9 @@ import 'package:liftu/user.dart';
 
 class homeScreen extends StatelessWidget {
 
-
   @override
   Widget build(BuildContext context) {
-
-
     return new Scaffold(appBar: AppBar(
-
       title: Text("Welcome"),
       automaticallyImplyLeading: false,
 
@@ -46,7 +42,7 @@ class homeScreen extends StatelessWidget {
                 padding: EdgeInsets.all(2.0),
               ),
               IconButton(
-                icon: Icon(Icons.search),
+                icon: Icon(Icons.add),
                 color: Colors.blue,
                 iconSize: 100.0,
                 tooltip: 'Increase volume by 10%',
@@ -62,7 +58,7 @@ class homeScreen extends StatelessWidget {
               ),
 
               new MaterialButton(
-                child: Text("Check Out"),
+                child: Text("Add Workout"),
                 minWidth: 200.0,
                 height: 100.0,
                 color: Colors.blue,
@@ -82,39 +78,8 @@ class homeScreen extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(10.0),
               ),
-              IconButton(
-                icon: Icon(Icons.check),
-                color: Colors.blue,
-                iconSize: 100.0,
-                tooltip: 'Increase volume by 10%',
-                onPressed: () {
 
-                  setScreen(0);
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => loginPage()),
-                  );
-                  // Do something here
-                },
-              ),
 
-              new MaterialButton(
-
-                child: Text("Check In"),
-                minWidth: 200.0,
-                height: 100.0,
-                color: Colors.blue,
-                textColor: Colors.white,
-                onPressed: () {
-
-                  setScreen(0);
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => loginPage()),
-                  );
-                  // Do something here
-                },
-              ),
 
             ],
           ),

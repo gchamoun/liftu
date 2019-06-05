@@ -96,7 +96,7 @@ class _loginPageState extends State<loginPage> {
     Response response = await dio.post(baseUrl + "/auth/mobile_login", data: formData);
 //    Map userMap = json.decode(response.data);
 //    print("***********************************************************************************");
-//
+
 //    print(response.data);
 //    print("***********************************************************************************");
     print("test");
@@ -106,7 +106,6 @@ class _loginPageState extends State<loginPage> {
 //    print(json.decode(response.data));
 //    print("!!!!!!");
 
-    print(baseUrl + "/auth/mobile_login");
     var currentUser = new user.fromJson(response.data);
     if(currentUser.id == 0){
       print("Invalid username or password");
